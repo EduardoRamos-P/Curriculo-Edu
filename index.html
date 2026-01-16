@@ -39,8 +39,9 @@
                         
                         <nav class="nav justify-content-center w-100" id="nav" >
 
-                            <img src="Assets/IMG/img_perfil.jpg" alt="img-perfil falhou" id="perfil" class="rounded-circle" width="50px" height="50px" style="z-index: 10;">
-                            
+                            <img src="Assets/IMG/img_perfil.jpg" alt="img-perfil falhou" id="perfil" class="rounded-circle" width="50px" height="50px" style="border-color: #3498db; object-fit: cover; object-position: top;">
+                            <span id="nome-perfil" class="nm-perfil"><strong>Eduardo Ramos Pereira</strong></span>
+
                             <a class="nav-link text-white active " href="#" ><i class="fas fa-home"></i> Início</a>
                             <a class="nav-link text-white " href="#Sobre"><i class="fa-regular fa-circle-user"></i> Sobre</a>
                             <a class="nav-link text-white" href="#Formacoes" ><i class="fas fa-medal"></i> Formações</a>  
@@ -55,7 +56,7 @@
 
                         <nav class="nav justify-content-center w-100" id="nav-menu" >
 
-                            <img src="Assets/IMG/img_perfil.jpg" alt="img-perfil falhou" id="perfil-menu" class="rounded-circle perfil-menu" width="100px" height="150px">
+                            <img src="Assets/IMG/img_perfil.jpg" alt="img-perfil falhou" id="perfil-menu" class="rounded-circle perfil-menu" width="100px" height="100px" style="border-color: #3498db; object-fit: cover; object-position: top;">
 
                             <div class="coluna">
 
@@ -112,31 +113,48 @@
                     <h1 style="margin-top:100px ;">Sobre mim</h1>
                     <hr style="width:20%; height: 5px; background-color: #3498db; border: none; border-radius: 5px; margin-bottom: 50px;">
                     <figcaption id="sobre-item" class="d-flex col-12 flex-column flex-md-row">
-                        <img src="Assets/IMG/img_perfil.jpg" alt="falhou-perfil" width="350px" height="500px" style=" margin-right: 70px;" class="esquerda col-md-4" id="img-sobre">
-                        <div id="Texto-sobre " class="direita flex-md-column  col-md-6">
+                        <img src="Assets/IMG/img_perfil.jpg" alt="falhou-perfil" width="250px" height="400px" style=" margin-right: 0px; object-fit: cover; object-position: top;" class="esquerda col-md-4" id="img-sobre">
+                        <div id="Texto-sobre " class="direita flex-md-column ">
                             <p>Sou estudante de Desenvolvimento de Sistemas no SENAI, com previsão de conclusão em um ano. Tenho um ano de experiência em programação e gosto tecnologia e soluções criativas. Tenho experiência em desenvolvimento front-end e back-end, trabalhando com linguagens como JavaScript, Python, HTML5, CSS3 e frameworks como Bootstrap.</p>
                             <p>Estou em busca de oportunidades para aplicar meus conhecimentos e continuar aprendendo .</p>
-                            <h3>Habilidades:</h3>
-                            <ul style="list-style-type: none;">
-                                <li style="display: flex; align-items: center;">
-                                    <i class="fab fa-js-square fa-3x" style="margin-right: 10px;"></i>Domínio de JavaScript para atuação tanto no front-end quanto no back-end.
-                                </li>
-                                <li style="display: flex; align-items: center;">
-                                    <i class="fab fa-css3 fa-3x" style="margin-right: 10px;"></i>Habilidades avançadas em CSS, com experiência em animações e personalização de páginas.
-                                </li>
-                                <li style="display: flex; align-items: center">
-                                   <i class="fab fa-python fa-3x" style="margin-right: 10px;"></i>Experiência com Python para desenvolvimento de soluções robustas no back-end.
-                                </li>
-                                <li style="display: flex; align-items: center">
-                                    <i class="fab fa-html5 fa-3x" style="margin-right: 10px;"></i> Conhecimento em HTML para criação de páginas web responsivas e funcionais.
-                                </li>
-                                <li style="display: flex; align-items: center">
-                                    <i class="fas fa-database fa-3x" style="margin-right: 10px;"></i> Capacidade de criar e gerenciar bancos de dados SQL para armazenamento eficiente de dados, usando MySQL.
-                                </li>
-                    
-                            </ul>
+                            
                         </div>
                     </figcaption>
+                </div>
+
+            </section>
+
+            <section id="Habilidades">
+                <h1>Habilidades</h1>
+                <hr style="width: 30%; height: 5px; background-color: #3498db; border: none; border-radius: 10px;">
+                <div id="Listas" class="flex-column flex-md-row">
+                    <div id="Lista-linguagens" class="esquerda">
+                        <h3>Linguagens:</h3>
+                        <div id="Python" class="Habilidades"><i class="fab fa-brands fa-python fa-3x"></i>Python</div>
+                        <div id="JavaScript" class="Habilidades"><i class="fab fa-js-square fa-3x"></i>JavaScript</div>
+                        <div id="PHP" class="Habilidades"><i class="fa-brands fa-php fa-3x"></i>PHP</div>
+                    </div>
+    
+                    <div id="Lista-BD" class="esquerda">
+                        <h3>Bancos de Dados:</h3>
+                        <div class="Habilidades"><i class="fab fa-js-square fa-3x"></i>Apto em Java Script</div>
+                        <div class="Habilidades"><i class="fab fa-js-square fa-3x"></i>Apto em Java Script</div>
+                        <div class="Habilidades"><i class="fab fa-js-square fa-3x"></i>Apto em Java Script</div>
+                    </div>
+
+                    <div id="Lista-Front" class="direita">
+                        <h3>Front-end:</h3>
+                        <div class="Habilidades"><i class="fab fa-js-square fa-3x"></i>Apto em Java Script</div>
+                        <div class="Habilidades"><i class="fab fa-js-square fa-3x"></i>Apto em Java Script</div>
+                        <div class="Habilidades"><i class="fab fa-js-square fa-3x"></i>Apto em Java Script</div>
+                    </div>
+
+                    <div id="Lista-Ferramentas" class="direita">
+                        <h3>Ferramentas:</h3>
+                        <div class="Habilidades"><i class="fab fa-js-square fa-3x"></i>Apto em Java Script</div>
+                        <div class="Habilidades"><i class="fab fa-js-square fa-3x"></i>Apto em Java Script</div>
+                        <div class="Habilidades"><i class="fab fa-js-square fa-3x"></i>Apto em Java Script</div>
+                    </div>
                 </div>
 
             </section>
@@ -148,7 +166,7 @@
                 </div>
             </section>
             
-            <section id="Projetos" style="margin-top: 150px;">
+            <!--<section id="Projetos" style="margin-top: 150px;">
                 <h1>Experiência</h1>
                 <p style="border: solid black 2px; ">ainda sem emprego,Estudei sobre muitas coisas no curso, aprendendo sobre APIs algumas linguagens de programação e também frameworks, já vi um pouco de metodologias, como por exemplo: a metodologia ágil e a de scrum, conhecendo o básico seobre elas e estando aberto para aprender mais</p>
 
@@ -172,7 +190,7 @@
                 </div>
                 
 
-            </section>
+            </section>!-->
 
         </main>
 

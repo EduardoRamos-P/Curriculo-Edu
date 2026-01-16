@@ -27,6 +27,14 @@ nav{
    
 }
 
+.nav .nm-perfil{
+    position: absolute;
+    color: white;
+    left: 90px;
+    gap: 20px;
+
+}
+
 .nav a:focus{
     background-color: #0063cc;
     
@@ -36,7 +44,7 @@ nav{
     align-content: center;
     height: 100%;
 
-    
+
 }
 
 nav a:hover{
@@ -124,8 +132,8 @@ nav a:hover{
 
 #perfil{
     position: absolute;
-    left: 30px;
-    border: 3px solid #fff
+    left: 35px;
+    border: 3px solid #3498db;
 }
 
 
@@ -136,7 +144,71 @@ nav a:hover{
     border-radius: 15px;
     background-color: #0063cc13;
     padding-bottom: 25px;
+    align-items: center;
+    justify-content: center;
     
+}
+
+#Listas {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+#Lista-linguagens{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+#Lista-BD{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#Lista-Front{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#Lista-Ferramentas{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.Habilidades{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 250px;
+    height: 50px;
+}
+
+#Python{
+    border: 5px solid rgb(119, 200, 255);
+    border-radius:10px ;
+    background-image: linear-gradient(to right, rgb(235, 235, 114), rgb(83, 175, 236));
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#Python:hover{
+    transform: scale(1.05);
+    box-shadow:  0 0 30px rgb(0, 238, 255);
+}
+
+#JavaScript{
+    border: 5px solid rgb(250, 250, 133);
+    border-radius: 10px;
+    background-color: rgb(243, 243, 70);
+    background-image: linear-gradient(to right, white, rgb(243, 243, 70));
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#JavaScript:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 30px yellow;
 }
 
 #img-sobre{
@@ -146,8 +218,11 @@ nav a:hover{
 
 #sobre-item{
     display: flex;
-    align-items:self-start;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
+    gap: 70px;
+
 
 }
 
