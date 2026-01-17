@@ -232,6 +232,52 @@ nav a:hover{
     box-shadow: 0 0 30px #087892;
 }
 
+#HTML5{
+    border: 5px solid #ec652a;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #ec652a, #ffffff);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#HTML5:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #ec652a;
+}
+
+#CSS{
+    border: 5px solid #2465f1;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #2465f1, #ffffff);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#CSS:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #2465f1;
+}
+
+#Git{
+    border: 5px solid #14191e;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #fff, #14191e);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#Git:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #14191e;
+}
+
+#IDE{
+    border: 5px solid #41b6ba;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #41b6ba, #fff);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#IDE:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #41b6ba;
+}
+
+
+
 #img-sobre{
     border-radius: 15px;
     
