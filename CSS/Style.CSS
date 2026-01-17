@@ -189,9 +189,9 @@ nav a:hover{
 }
 
 #Python{
-    border: 5px solid rgb(119, 200, 255);
+    border: 5px solid rgb(83, 175, 236);
     border-radius:10px ;
-    background-image: linear-gradient(to right, rgb(235, 235, 114), rgb(83, 175, 236));
+    background-image: linear-gradient(to right, rgb(83, 175, 236),rgb(235, 235, 114));
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 #Python:hover{
@@ -202,13 +202,34 @@ nav a:hover{
 #JavaScript{
     border: 5px solid rgb(250, 250, 133);
     border-radius: 10px;
-    background-color: rgb(243, 243, 70);
-    background-image: linear-gradient(to right, white, rgb(243, 243, 70));
+    background-image: linear-gradient(to right, rgb(243, 243, 70), white);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 #JavaScript:hover{
     transform: scale(1.05);
     box-shadow: 0 0 30px yellow;
+}
+
+#PHP{
+    border: 5px solid rgb(66, 84, 245);
+    border-radius: 10px;
+    background-image: linear-gradient(to right, rgb(66, 84, 245), rgb(53, 52, 52));
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#PHP:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgb(0, 0, 255);
+}
+
+#DB{
+    border: 5px solid #087892;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #087892, #f29418);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#DB:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #087892;
 }
 
 #img-sobre{
