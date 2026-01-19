@@ -35,10 +35,7 @@ nav{
 
 }
 
-.nav a:focus{
-    background-color: #0063cc;
-    
-}
+
 
 #nav a{
     align-content: center;
@@ -182,7 +179,6 @@ nav a:hover{
 
 .Habilidades{
     display: flex;
-    gap: 10px;
     align-items: center;
     width: 250px;
     height: 50px;
@@ -276,6 +272,55 @@ nav a:hover{
     box-shadow: 0 0 30px #41b6ba;
 }
 
+#Contatos{
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(150, 150, 150);
+    padding: 20px;
+}
+#Contatos h1{
+    color: #007bff;
+}
+
+#contato-ls{
+    gap: 10px;
+}
+
+#infos{
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    border-radius: 100%;
+    right: 20px;
+}
+
+
+.other-infos{
+    border-radius: 100%;
+    text-decoration: none;
+    color: #007bff;
+    background-color: #fff;
+    padding: 5px;
+    padding-left: 9px;
+    padding-right: 9px;
+    transition: background-color 0.1s ease;
+    
+}
+.other-infos:hover{
+    background-color: rgb(180, 178, 178);
+}
+
+#infos-menu{
+    display: flex;    
+    gap: 10px;
+    margin-top: 5px;
+}
+
+#infos-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 
 #img-sobre{

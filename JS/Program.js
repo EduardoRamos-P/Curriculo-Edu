@@ -101,11 +101,13 @@ function fechar_abrir(){
         }
         document.getElementById('nav-menu').classList.add('animacao-fechar-nav')
         document.getElementById('perfil-menu').classList.add('animacao-fechar-items')
+        document.getElementById('infos-menu').classList.add('animacao-fechar-items')
 
         setTimeout(() => {
             document.getElementById('nav-bar-mob').classList.add('d-none')
             document.getElementById('nav-menu').classList.remove('animacao-aparecer-nav')
             document.getElementById('perfil-menu').classList.remove('animacao-aparecer-items')
+            document.getElementById('infos-menu').classList.remove('animacao-aparecer-items')
             i = 0
             while(i < Navlinks.length){
                 Navlinks[i].classList.remove('animacao-aparecer-items')
@@ -120,6 +122,7 @@ function fechar_abrir(){
 
         document.getElementById('nav-menu').classList.remove('animacao-fechar-nav')
         document.getElementById('perfil-menu').classList.remove('animacao-fechar-items')
+        document.getElementById('infos-menu').classList.remove('animacao-fechar-items')
         let i = 0
         const Navlinks = document.getElementsByClassName('nav-link-mob')
         while(i < Navlinks.length){
@@ -129,6 +132,7 @@ function fechar_abrir(){
         document.getElementById('nav-bar-mob').classList.remove('d-none')
         document.getElementById('nav-menu').classList.add('animacao-aparecer-nav')
         document.getElementById('perfil-menu').classList.add('animacao-aparecer-items')
+        document.getElementById('infos-menu').classList.add('animacao-aparecer-items')
 
         i = 0
         while(i < Navlinks.length){
