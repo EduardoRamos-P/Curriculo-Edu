@@ -157,7 +157,7 @@ function mudar_botao() {
 document.addEventListener('DOMContentLoaded',mudar_botao)
 
 function auto_fechar(){
-    if(window.innerWidth > 992 ){
+    if(window.innerWidth > 1200 ){
         if(fechar){
             fechar_abrir()
             document.getElementById('botaonav').classList.toggle('x')
