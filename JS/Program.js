@@ -167,13 +167,6 @@ function auto_fechar(){
     }
 }
 
-const links = document.getElementsByClassName('nav-link')
-window.addEventListener('scroll',()=>{
-    for(i=0;i<links.length;i++){
-        links[i].blur()
-    }
-})
-
 
 
 auto_fechar()
