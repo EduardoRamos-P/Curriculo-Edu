@@ -6,7 +6,6 @@
     background-repeat: no-repeat;
     width: 100%;
     min-height: 100vh;
-    border: 1px solid red;
 }
 
 .esquerda,.direita,.cima,.baixo{
@@ -353,9 +352,7 @@ nav a:hover{
     align-items: flex-end; 
     justify-content: center;
     height: 250px;
-    gap: 10px;
-    margin-left: 10px;
-    
+    gap: 5px;    
 }
 .barra {
     display: flex;
