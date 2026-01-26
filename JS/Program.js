@@ -167,7 +167,17 @@ function auto_fechar(){
     }
 }
 
+document.getElementById('rotate-button').addEventListener("click", () => {
+    document.querySelector('.flip-card').classList.toggle('rotate')
+})
 
+document.querySelectorAll('.img-certificados').forEach(img => {
+    img.addEventListener('click', () => {
+        document.getElementById('zoom').classList.remove('d-none')
+        document.getElementById('zoom').classList.add('aparecer-zoom')
+        document.getElementById('card-formacoes').classList.add('ampliar-img')
+    })
+})
 
 auto_fechar()
 
