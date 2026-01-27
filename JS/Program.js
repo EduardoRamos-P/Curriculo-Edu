@@ -173,10 +173,37 @@ document.getElementById('rotate-button').addEventListener("click", () => {
 
 document.querySelectorAll('.img-certificados').forEach(img => {
     img.addEventListener('click', () => {
+        document.getElementById('zoom').classList.remove('fechar-zoom')
+        document.getElementById('card-formacoes').classList.remove('diminuir-img')
+        console.log("ALT:", img.alt)
+
+        document.querySelector('.front-img-zoom').src = img.src
+        if(img.alt == "Diploma-senai"){
+            document.querySelector('.back-img-zoom').src = 'Assets/IMG/Diploma-senai-back.png'
+        }else{
+            if(img.alt == "Diploma-ensino-medio"){
+                document.querySelector('.back-img-zoom').src = 'Assets/IMG/Diploma-ensino-medio-back.jpg'
+            }else{
+                document.querySelector('.back-img-zoom').src = 'Assets/IMG/em-branco.png'
+            }
+        }
         document.getElementById('zoom').classList.remove('d-none')
         document.getElementById('zoom').classList.add('aparecer-zoom')
         document.getElementById('card-formacoes').classList.add('ampliar-img')
     })
+})
+
+document.getElementById('return-button').addEventListener('click', () => {
+    document.getElementById('zoom').classList.remove('aparecer-zoom')
+    document.getElementById('card-formacoes').classList.remove('ampliar-img')
+
+    document.getElementById('zoom').classList.add('fechar-zoom')
+    document.getElementById('card-formacoes').classList.add('diminuir-img')
+
+    document.querySelector('.flip-card').classList.remove('rotate')
+    document.getElementById('zoom').addEventListener('animationend', () => {
+        document.getElementById('zoom').classList.add('d-none')
+    }, {once: true})
 })
 
 auto_fechar()
