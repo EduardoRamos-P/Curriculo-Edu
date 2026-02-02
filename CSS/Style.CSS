@@ -22,6 +22,10 @@ html, body {
     overflow-x: hidden;
 }
 
+html{
+    scroll-behavior: auto;
+
+}
 
 nav{
     height: 60px;
@@ -253,7 +257,8 @@ nav a:hover{
 
 #Listas {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     gap: 50px;
 }
 #Lista-linguagens{
@@ -378,17 +383,69 @@ nav a:hover{
 }
 
 #Contatos{
-    margin-top: 15px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgb(150, 150, 150);
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
 }
+
 #Contatos h1{
     color: #007bff;
 }
 
 #contato-ls{
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(150, 150, 150);
+    padding: 20px;
     gap: 10px;
+    width: 100%;
+}
+
+#form-contatos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(150, 150, 150);
+    padding: 20px;
+    gap: 10px;
+    width: 100%;
+}
+
+.campos-form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+#form-row{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+
+}
+
+#form-button{
+    border: none;
+    width: 50%;
+    background-color: #007bff;
+    color: white;
+    height: 50px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+#form-button:hover{
+    background-color: #0063ce;
+}
+
+#mensagem{
+    min-height: 100px;
 }
 
 #infos{
@@ -602,8 +659,8 @@ main{
     width: auto;
     height: 300px;
     border-radius: 20px;
-    max-height: 50vh;
-    max-width: 50vw;
+    max-height: 90vh;
+    max-width: 90vw;
     padding: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     

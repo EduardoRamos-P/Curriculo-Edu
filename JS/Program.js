@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded",function(){
     const Frases = [
         "Desenvolvedor back-end",
@@ -209,4 +210,6 @@ document.getElementById('return-button').addEventListener('click', () => {
 auto_fechar()
 
 window.addEventListener('resize',auto_fechar)
+
+zenscroll.setup(1000, 100)
 
