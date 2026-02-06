@@ -213,3 +213,9 @@ window.addEventListener('resize',auto_fechar)
 
 zenscroll.setup(1000, 100)
 
+document.getElementById('form-contatos').addEventListener('submit', function(event){
+    event.preventDefault();
+    emailjs.sendForm('service_4gwfzsl','template_be2svlv',this);
+    this.reset();    
+})
+
