@@ -219,3 +219,9 @@ document.getElementById('form-contatos').addEventListener('submit', function(eve
     this.reset();    
 })
 
+document.querySelectorAll('.nav-link-mob').forEach(link => {
+    link.addEventListener('click', function(){
+        fechar_abrir()
+        document.getElementById('botaonav').classList.toggle('x')
+    })
+})
