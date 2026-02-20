@@ -429,8 +429,18 @@ nav a:hover{
 
 }
 
-#form-row input{
-    max-width: 50vw;
+#alert-mensagem{
+    cursor: default;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    border: 5px solid red;
+    border-radius: 10px;
+    background-color: rgb(253, 76, 76);
+    color: rgb(151, 0, 0);
+    width: 100%;
+    padding: 10px;
+    transition: opacity ease 1s;
 }
 
 #form-button{
@@ -673,6 +683,20 @@ main{
 .img-certificados:hover{
     transform: scale(1.05);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) ;
+}
+
+#pdf-download{
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    padding: 10PX;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+#pdf-download:hover{
+    background-color: #0063ce;
 }
 
 

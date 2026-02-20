@@ -211,11 +211,47 @@ auto_fechar()
 
 window.addEventListener('resize',auto_fechar)
 
+mob_form();
+
+function mob_form(){
+    if(window.innerWidth < 900){
+        document.getElementById('form-row').style.flexDirection = "Column"
+    }else{
+        document.getElementById('form-row').style.flexDirection = "Row"
+
+    }
+}
+window.addEventListener('resize',mob_form)
+
+
 zenscroll.setup(1000, 100)
 
 document.getElementById('form-contatos').addEventListener('submit', function(event){
     event.preventDefault();
-    emailjs.sendForm('service_4gwfzsl','template_be2svlv',this);
+    let nome = document.getElementById('nome').value
+    let email = document.getElementById('email-form').value
+    let assunto = document.getElementById('assunto').value
+    let mensagem = document.getElementById('mensagem').value
+    console.log(nome);
+    console.log(email);
+    console.log(assunto);
+    console.log(mensagem);
+
+    if(nome.trim() == "" || email.trim() == "" || assunto.trim() == "" || mensagem.trim() == ""){
+        document.getElementById('alert-mensagem').textContent = "Preencha todos os campos"
+        document.getElementById('alert-mensagem').style.opacity = 100
+        document.getElementById('form-button').disabled = true
+        setTimeout(function(){
+            document.getElementById('alert-mensagem').style.opacity = 0
+        },3000)
+
+        setTimeout(function(){
+            document.getElementById('form-button').disabled = false
+        },4000)
+    }else{
+        emailjs.sendForm('service_4gwfzsl','template_be2svlv',this);
+    }
+
     this.reset();    
 })
 
@@ -225,3 +261,5 @@ document.querySelectorAll('.nav-link-mob').forEach(link => {
         document.getElementById('botaonav').classList.toggle('x')
     })
 })
+
+
